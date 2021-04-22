@@ -1,0 +1,17 @@
+[package]
+authors = ["Étienne ANDRÉ <eti.andre@gmail.com>"]
+edition = "2018"
+name = "rtic-issue-sw-tasks"
+version = "0.0.1"
+
+[dependencies]
+
+cortex-m-rt = "0.6.13"
+nb = "1.0.0"
+rtt-target = {version = "0.3.0", features = ["cortex-m"]}
+panic-rtt-target = { version = "0.1.1", features = ["cortex-m"] }
+cortex-m-rtic = "0.5"
+
+[dependencies.stm32f3xx-hal]
+features = ["stm32f303xe"]
+version = "*"
